@@ -1,5 +1,9 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Roboto:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+}
 
 :root{
     --color-primary:#ffc500;
@@ -11,6 +15,15 @@
 body{
     margin: 0;
     padding-top: 7.75rem;
+}
+
+header, main, footer {
+    overflow-x: hidden;
+}
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
 }
 
 ul{
@@ -129,3 +142,65 @@ ul{
     background: var(--color-primary);
     color: var(--color-text);
 }
+
+#counter{
+    background-color: var(--color-primary);
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.counter__container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    place-items: center;
+    padding: 4.375rem 1re;
+}
+.counter__container h3{
+    font-size: 2.185rem;
+}
+
+.institutional{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 3.125rem;
+    align-items: center;
+    padding: 4.375rem;
+}
+
+.institutional_image{
+    max-width: 550px;
+}
+
+.institutional__copy{
+    padding: 0 1.875 0 0;
+}
+.institutional__copy h6{
+    font-size: 0.875rem;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.institutional_copy h4{
+    font-size: 1.5625rem;
+    margin-top: 1rem;
+}
+
+.institutional p{
+    font-family: "Roboto", sans-serif;
+    font-size: 1.0625rem;
+    line-height: 1.6875rem;
+    margin-bottom: 2.5rem;
+}
+
+.btn--institutional{
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+.btn--institutional:hover{
+    color: var(--color-copy);
+    background: unset;
+}
+
