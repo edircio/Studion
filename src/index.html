@@ -42,10 +42,12 @@
     <header>
       <div id="slider">
         <div class="slide">
-          <img class="slide__background-imagem" src="imagens/banner.jpg" alt="Studion Banner"/>
+          <img class="slide__background-imagem" src="imagens/banner.jpg"
+            alt="Studion Banner"/>
 
           <div class="slide__copy">
-            <h6><span class="copy--primary">Próximo Evento</span> <span>- dia 25 de setembro as 19h</spam></h6>
+            <h6><span class="copy--primary">Próximo Evento</span> <span>- dia 25
+                de setembro as 19h</spam></h6>
             <h2><span class="copy--primary">Creative</span><span> Minds</span></h2>
             <button class="btn">Saiba Mais</button>
           </div>
@@ -63,20 +65,21 @@
           </li>
           <li>
             <h3>+ de 1.000.000</h3>
-          <small>de ingressos vendidos</small>
+            <small>de ingressos vendidos</small>
           </li>
           <li>
             <h3>+ de 300</h3>
-            <small>espectativas atendidas</small> 
+            <small>espectativas atendidas</small>
           </li>
         </ul>
       </section>
 
       <section class="container institutional">
-        
-          <img src="imagens/institutional.jpg" class="institutional__image" alt="Studion institutional" />
 
-          <div class="institutional__copy">
+        <img src="imagens/institutional.jpg" class="institutional__image"
+          alt="Studion institutional" />
+
+        <div class="institutional__copy">
           <h6>Fazemos o seu evento acontecer</h6>
           <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h4>
           <p>
@@ -89,35 +92,55 @@
         </div>
       </section>
 
-      <section>
-        <div>
-          <h6>
-            Você informa a temática e nós planejamos um evento com tecnologia e
-          </h6>
-          <h2><span>Muito + </span>Diversão</h2>
-          <button>Fazer cotação</button>
+      <section class="quote">
+        <div class="container quote__container">
+          <div class="quote__copy">
+            <h6>
+              Você informa a temática e nós planejamos um evento com tecnologia
+            </h6>
+            <h2><span class="copy--primary">Muito + <br></span>Diversão</h2>
+            <button class="btn btn--quote">Fazer cotação</button>
+          </div>
         </div>
       </section>
     </main>
 
 
-    <footer>
-      <h2>Studi<span>on</span><span>Eventos</span></h2>
-      <form>
-        <label>receba news e promoções</label>
-        <input type="email" placeholder="email" />
-        <button type="submit">Enviar</button>
-      </form>
-      <ul>
-        <li><a href="https://facebook.com/" target="_blank">Facebook</a></li>
-        <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
-        <li><a href="https://youtube.com/" target="_blank">Youtube</a></li>
-      </ul>
-      <hr />
+    <footer class="footer">
+      <div class="container footer__container">
+
+        <h2 class="logo-studion">Studi<span class="copy--primary">on</span>
+          <span class="logo-studion-subtitle">Eventos</span>
+        </h2>
+
+        <form class="footer__form">
+          <label>receba news e promoções</label>
+          <div class="footer__form_email">
+            <input type="email" placeholder="email" />
+            <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+          </div>
+        </form>
+
+        <ul class="footer__social">
+          <li><a href="https://facebook.com/" target="_blank"><i
+                class="fa-brands fa-facebook fa-2x"></i></a></li>
+          <li><a href="https://twitter.com/" target="_blank">
+              <span class="fa-stack">
+                <i class="fa-solid fa-circle fa-stack-2x"></i>
+                <i class="fa-brands fa-twitter fa-stack-1x"></i>
+              </span>
+            </a></li>
+          <li><a href="https://youtube.com/" target="_blank"><i
+                class="fa-regular fa-circle-play fa-2x"></i></a></li>
+        </ul>
+
+      </div>
       <p>
-        <small>Studi<span>ON</span> - Todos os direitos reservados.</small>
+        <small>Studi<span class="copy--primary">ON</span> - Todos os direitos
+          reservados.</small>
       </p>
     </footer>
+
 
   </body>
 </html>
