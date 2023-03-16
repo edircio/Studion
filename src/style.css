@@ -1,39 +1,40 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Roboto:wght@300&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css');
 
-*{
+* {
     box-sizing: border-box;
 }
 
-:root{
-    --color-primary:#ffc500;
-    --color-text:#fff;
-   font-family: 'Montserrat', sans-serif;
-   font-size: 16px;
+:root {
+    --color-primary: #ffc500;
+    --color-text: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
 }
 
-body{
+body {
     margin: 0;
     padding-top: 7.75rem;
 }
 
-header, main, footer {
+header,
+main,
+footer {
     overflow-x: hidden;
 }
 
-.container{
+.container {
     max-width: 1140px;
     margin: 0 auto;
 }
 
-ul{
+ul {
     display: flex;
     list-style: none;
     padding-left: 0;
 }
 
-.navbar{
+.navbar {
     position: fixed;
     display: grid;
     grid-template-columns: 1fr 9fr;
@@ -41,35 +42,35 @@ ul{
     top: 0;
     left: 0;
 
-    width: 100vw; 
+    width: 100vw;
     height: 7.75rem;
     padding: 0 1rem;
     background-color: #000;
     color: var(--color-text);
 }
 
-.navbar__links{
+.navbar__links {
     justify-self: end;
 }
 
-.navbar__links li{
+.navbar__links li {
     font-size: 0.875rem;
     margin-right: 3rem;
     text-transform: uppercase;
 }
 
-.navbar__links a{
-    color:var(--color-text);
+.navbar__links a {
+    color: var(--color-text);
     text-decoration: none;
     font-weight: 300;
 }
 
-.navbar__links a:hover{
-    color:red;
+.navbar__links a:hover {
+    color: red;
 
 }
 
-.logo-studion{
+.logo-studion {
     font-size: 2.375rem;
     font-weight: 800;
     line-height: 1ch;
@@ -77,55 +78,61 @@ ul{
     text-align: right;
 }
 
-.logo-studion-subtitle{
+.logo-studion a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo-studion-subtitle {
     font-size: 0.875rem;
     font-weight: 300;
 }
 
-.copy--primary{
+.copy--primary {
     color: var(--color-primary);
 }
 
-#slider{
+#slider {
     background-color: #000;
     color: var(--color-text);
 }
-.slide{
+
+.slide {
     position: relative;
-    height: calc(90vh - 7.75rem);
+    /*height: calc(88vh - 5.75rem);*/
 }
 
-.slide__background-imagem{
+.slide__background-imagem {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
 }
 
-.slide__copy{
+.slide__copy {
     position: absolute;
     top: 10.25rem;
     left: 50vw;
 }
 
-.slide__copy h6{
+.slide__copy h6 {
     font-size: 0.9375rem;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 0.1875rem;
 }
 
-.slide__copy h2{
+.slide__copy h2 {
     font-size: 4.5rem;
     text-transform: uppercase;
     line-height: 4.25rem;
 }
 
-.slide__copy h2 span{
+.slide__copy h2 span {
     display: block;
 }
 
-.btn{
+.btn {
     cursor: pointer;
     padding: 1rem 2.5rem;
     border: 0.125rem solid var(--color-text);
@@ -138,29 +145,30 @@ ul{
     transition: 0.3s all ease;
 }
 
-.btn:hover{
+.btn:hover {
     border-color: var(--color-primary);
     background: var(--color-primary);
     color: var(--color-text);
 }
 
-#counter{
+#counter {
     background-color: var(--color-primary);
     color: #fff;
     text-transform: uppercase;
 }
 
-.counter__container{
+.counter__container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     place-items: center;
     padding: 4.375rem 1re;
 }
-.counter__container h3{
+
+.counter__container h3 {
     font-size: 2.185rem;
 }
 
-.institutional{
+.institutional {
     display: grid;
     grid-template-columns: auto auto;
     gap: 3.125rem;
@@ -168,14 +176,15 @@ ul{
     padding: 4.375rem;
 }
 
-.institutional_image{
+.institutional_image {
     max-width: 550px;
 }
 
-.institutional__copy{
+.institutional__copy {
     padding: 0 1.875 0 0;
 }
-.institutional__copy h6{
+
+.institutional__copy h6 {
     font-size: 0.875rem;
     font-weight: 300;
     letter-spacing: 0.1rem;
@@ -183,31 +192,31 @@ ul{
     margin: 0;
 }
 
-.institutional_copy h4{
+.institutional_copy h4 {
     font-size: 1.5625rem;
     margin-top: 1rem;
 }
 
-.institutional p{
+.institutional p {
     font-family: "Roboto", sans-serif;
     font-size: 1.0625rem;
     line-height: 1.6875rem;
     margin-bottom: 2.5rem;
 }
 
-.btn--institutional{
+.btn--institutional {
     background-color: var(--color-primary);
     color: #fff;
 }
 
-.btn--institutional:hover{
+.btn--institutional:hover {
     color: var(--color-copy);
     background: unset;
-    
-    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 1 );
+
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 1);
 }
 
-.quote{
+.quote {
     background-image: url('./imagens/parallax.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -216,21 +225,21 @@ ul{
     height: 800px;
 }
 
-.quote__container{
+.quote__container {
     display: grid;
     align-items: center;
     justify-items: end;
     min-height: 88vh;
-   
+
 
 }
 
-.quote__copy{
+.quote__copy {
     background: #fff;
     padding: 4.625rem 3.375rem;
 }
 
-.quote__copy h6{
+.quote__copy h6 {
     font-size: 0.9375rem;
     font-weight: 400;
     letter-spacing: 0.1875rem;
@@ -240,7 +249,7 @@ ul{
     max-width: 51ch;
 }
 
-.quote__copy h2{
+.quote__copy h2 {
     font-size: 5rem;
     line-height: 5rem;
     text-transform: uppercase;
@@ -248,24 +257,24 @@ ul{
     margin: 1.875rem 0;
 }
 
-.quote__coppy h2 span{
+.quote__coppy h2 span {
     display: grig;
 }
 
-.btn--quote{
+.btn--quote {
     color: #000;
     border-color: #000;
     background-color: unset;
 
 }
 
-.footer{
+.footer {
     background-color: #000;
     color: #fff;
     text-align: center;
 }
 
-.footer__container{
+.footer__container {
     display: grid;
     grid-template-columns: repeat(3, auto);
     align-items: center;
@@ -273,32 +282,32 @@ ul{
     padding: 5rem 0;
 }
 
-.footer .logo-studion{
+.footer .logo-studion {
     justify-self: start;
     margin: 0;
     font-size: 1rem;
 }
 
-.footer__form{
+.footer__form {
     display: grid;
     grid-template-columns: 9ch auto;
     gap: 1.375rem;
     align-items: center;
 }
 
-.footer__form label{
+.footer__form label {
     font-size: 0.875rem;
     font-weight: 300;
     line-height: 1rem;
 
 }
 
-.footer__form_email{
+.footer__form_email {
     display: grid;
     grid-template-columns: auto 3.375rem;
 }
 
-.footer__form input{
+.footer__form input {
     background-color: var(--color-primary);
     border: unset;
     font-size: 0.875rem;
@@ -308,26 +317,156 @@ ul{
     color: #fff;
 }
 
-.footer__form input::placeholder{
-    color:#000;
+.footer__form input::placeholder {
+    color: #000;
 
 }
 
-.footer__social a{
+.footer__social a {
     color: #fff;
 }
 
-.footer__social .fa-twitter{
+.footer__social .fa-twitter {
     color: black;
 }
 
 
-.footer__form button{
+.footer__form button {
     cursor: pointer;
     transition: 0.3s all ease;
 }
 
-.footer__form button:hover{
-background-color: #000;
-color: #fff;
+.footer__form button:hover {
+    background-color: #000;
+    color: #fff;
 }
+
+.hero {
+    position: relative;
+    height: 34.625rem;
+    background-color: #000;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;*/
+}
+
+.hero__background {
+    position: absolute;
+    object-fit: contain;
+    object-position: center;
+    height: 100%;
+}
+
+.hero__container {
+    position: relative;
+    height: 100%;
+
+}
+
+.hero__copy {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.hero__copy h2 {
+    margin: 0;
+    margin-bottom: 3rem;
+    font-size: 7.5rem;
+    line-height: 7.5rem;
+    letter-spacing: -0.3125rem;
+    color: var(--color-primary);
+}
+
+.hero__copy p {
+    margin: 0;
+    font-size: 0.9375rem;
+    line-height: 1.875rem;
+    color: var(--color-text);
+
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact h3 {
+    margin: 0;
+    margin-bottom: 1.875rem;
+    font-size: 1.5625rem;
+}
+
+.contact__info h3:nth-of-type(2) {
+    margin-top: 3.75rem;
+}
+
+.contact__form {
+    background-color: #000;
+    color: #fff;
+}
+
+.contact__info,
+.contact__form {
+    padding: 4rem 0;
+}
+
+.contact__info i {
+    font-size: 1.5rem;
+    color: var(--color-primary);
+}
+
+.contact__info span {
+    display: grid;
+    grid-template-columns: 1.5rem auto;
+    gap: 0.625rem;
+    align-items: center;
+    font-family: "Roboto";
+    font-weight: 700;
+    line-height: 1.6875rem;
+}
+
+.contact__info__container,
+.contact__form__container {
+    width: 540px;
+}
+
+.contact__info__container {
+    float: right;
+    padding-right: 7.125rem;
+  }
+  
+  .contact__form__container {
+    padding-left: 7.125rem;
+  }
+
+  .contact__form {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .contact__form label,
+  .contact__form input {
+    display: block;
+  }
+  
+  .contact__form label {
+    font-weight: 700;
+  }
+  
+  .contact__form input {
+    width: 100%;
+    margin-bottom: 1.875rem;
+    padding: 0.5rem 0;
+    background: unset;
+    border: unset;
+    border-bottom: 0.06rem solid #fff;
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  
+  .contact__form input:focus {
+    outline: unset;
+  }
+  
+  .contact__form button {
+    float: right;
+  }
